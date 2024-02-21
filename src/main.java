@@ -66,6 +66,6 @@ public class main {
         "\nTotal Bayar: Rp. "+transPenjualan.getBiaya());
         
         System.out.println("==================================");
-        
+        // 
     }
 }
