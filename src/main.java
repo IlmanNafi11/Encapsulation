@@ -91,6 +91,16 @@ public class main {
         "\nHp Customer: " + tranServis.getPhone_Customer()+
         "\nAlamat Customer : " + tranServis.getAddress_Customer());
 
-        //
+        System.out.println("======================================");
+        // Membuat objek Register
+        Register reg = new Register("AzkaImanika", "Azka123");
+        //get data akun
+        System.out.println("Username: " + reg.getName()+
+        "\nPassword: "+ reg.getPassword());
+        // set password
+        reg.setPassword("imanika321");
+        System.out.println("====================");
+        System.out.println("Password Baru: " + reg.getPassword());
+        
     }
 }
