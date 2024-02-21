@@ -13,3 +13,9 @@ Digunakan pada konsep pewarisan. Apabila variable dan method dari class pemilik 
 Contructor merupakan method yang namanya sama dengan class itu sendiri, contructor merupakan method yang pertama kali dipanggil ketika kita menginstansiasi object yang memiliki constructor tersebut. Biasanya digunakan untuk memberikan nilai default/nilai awal pada atribut disuatu class.
 
 ![Alt Text](src/images/Construktor.png)
+
+## Getter Setter
+- Getter
+Method yang dibuat untuk mengambil/mengembalikan nilai sebuah atribute kepada pemanggilnya
+
+![image](src/images/Getter.png)
