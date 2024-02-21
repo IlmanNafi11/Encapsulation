@@ -10,7 +10,6 @@ public class TransaksiServis {
     private String nama_Customer;
     private String address_Customer;
     private String phone_Customer;
-    private int harga;
     // set biaya penanganan
     private int penanganan = 50000;
     //menjadikan class product sebagai atribute untuk digunakan menghitung biaya
