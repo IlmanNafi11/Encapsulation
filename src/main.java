@@ -32,7 +32,7 @@ public class main {
         dtPengguna.setTelephone("0852924534");
         System.out.println("No Hp: " + dtPengguna.getTelephone());
         System.out.println("================================================");
-        // membuat object product
+        // membuat object product-
         
     }
 }
