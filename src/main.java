@@ -46,6 +46,11 @@ public class main {
         "\nHarga: "+ produk.getHarga()+
         "\nID-Supplier: "+ produk.getId_suplier()+
         "\nNama Supplier: "+ produk.getNama_suplier());    
-            
+        // set/ubah data produk
+        produk.setHarga(50000);
+        System.out.println("==================");
+        System.out.println("Harga terbaru: " + produk.getHarga());
+
+        System.out.println("=====================================");
     }
 }
