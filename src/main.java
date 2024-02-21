@@ -1,10 +1,10 @@
-import java.util.Scanner;
-
+import java.util.Date;
 import Kelas.*;
 
 public class main {
     public static void main(String[] args) throws Exception {
 
+        System.out.println();
         // Membuat object login
         Login lg = new Login("ilmannafi", "ilman1234 ");
         // get username dan password
@@ -18,6 +18,7 @@ public class main {
         System.out.println("Username: "+ lg.getUsername() +
         "\nPassword: "+ lg.getPassword());
 
+        System.out.println();
         System.out.println("================================================================");
         // Membuat object DataPengguna
         DataPengguna dtPengguna = new DataPengguna("Ilman","331403558","081292332","Sragen","Owner");
@@ -34,6 +35,7 @@ public class main {
         dtPengguna.setTelephone("0852924534");
         System.out.println("No Hp: " + dtPengguna.getTelephone());
 
+        System.out.println();
         System.out.println("================================================");
         // membuat object product
         Product produk = new Product("Softcase", "ACS-123", "Aksesoris", 35000, 10, "Tri handoko", "SP-1321");
@@ -51,6 +53,7 @@ public class main {
         System.out.println("==================");
         System.out.println("Harga terbaru: Rp. " + produk.getHarga());
 
+        System.out.println();
         System.out.println("=====================================");
         // Membuat objek Transaksi Penjualan
         TransaksiPenjualan transPenjualan = new TransaksiPenjualan("TR12987", produk.getNama_Product(), 0, 4, produk.getId_produk());
@@ -65,7 +68,9 @@ public class main {
         "\nJumlah: " + transPenjualan.getJumlah()+
         "\nTotal Bayar: Rp. "+transPenjualan.getBiaya());
         
+        System.out.println();
         System.out.println("==================================");
+        System.out.println("Transaksi Service");
         // membuat objek Transaksi Service
         TransaksiServis tranServis = new TransaksiServis(produk.getId_produk(), produk.getNama_Product(), produk.getKategori(), 2, 0, "Azka", "Nganjuk", "0822442332", produk);
         // get data transaksi service
@@ -91,7 +96,9 @@ public class main {
         "\nHp Customer: " + tranServis.getPhone_Customer()+
         "\nAlamat Customer : " + tranServis.getAddress_Customer());
 
+        System.out.println();
         System.out.println("======================================");
+        System.out.println("Akun");
         // Membuat objek Register
         Register reg = new Register("AzkaImanika", "Azka123");
         //get data akun
@@ -102,7 +109,9 @@ public class main {
         System.out.println("====================");
         System.out.println("Password Baru: " + reg.getPassword());
 
+        System.out.println();
         System.out.println("===============================");
+        System.out.println("Member");
         // membuat objek Member
         Member mem = new Member("Ilman", "087321456", "Sragen");
         // get data member 
@@ -115,5 +124,22 @@ public class main {
         System.out.println("Nama Member: " + mem.getName()+
         "\nNo Hp: "+ mem.getTelephone()+
         "\nAlamat: "+ mem.getAddress());
+
+        System.out.println();
+        System.out.println("=============================");
+        // membuat objek Laporan
+        Laporan lap = new Laporan(new Date(), 1000000, 5000000);
+        // get data laporan
+        System.out.println("Laporan");
+        System.out.println("Tanggal : " + lap.getTanggal()+
+        "\nJumlah Pemasukan: Rp. "+ lap.getJumlahPemasukan()+
+        "\nJumlah Pengeluaran: Rp. " + lap.getJumlahPengeluaran());
+        System.out.println("=====================");
+        System.out.println("Laporan Terbaru");
+        // set jumlah pemasukan
+        lap.setJumlahPemasukan(1500000);
+        System.out.println("Tanggal : " + lap.getTanggal()+
+        "\nJumlah Pemasukan: Rp. "+ lap.getJumlahPemasukan()+
+        "\nJumlah Pengeluaran: Rp. " + lap.getJumlahPengeluaran());
     }
 }
