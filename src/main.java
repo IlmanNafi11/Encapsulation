@@ -52,5 +52,6 @@ public class main {
         System.out.println("Harga terbaru: " + produk.getHarga());
 
         System.out.println("=====================================");
+        System.out.println("");
     }
 }
