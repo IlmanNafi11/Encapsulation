@@ -1,7 +1,7 @@
 import java.util.Date;
 import Kelas.*;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws Exception {
 
         System.out.println();
