@@ -101,6 +101,19 @@ public class main {
         reg.setPassword("imanika321");
         System.out.println("====================");
         System.out.println("Password Baru: " + reg.getPassword());
-        
+
+        System.out.println("===============================");
+        // membuat objek Member
+        Member mem = new Member("Ilman", "087321456", "Sragen");
+        // get data member 
+        System.out.println("Nama Member: " + mem.getName()+
+        "\nNo Hp: "+ mem.getTelephone()+
+        "\nAlamat: "+ mem.getAddress());
+        System.out.println("====================");
+        // set nama member
+        mem.setName("Fadira");
+        System.out.println("Nama Member: " + mem.getName()+
+        "\nNo Hp: "+ mem.getTelephone()+
+        "\nAlamat: "+ mem.getAddress());
     }
 }
