@@ -1,7 +1,7 @@
 # Tugas Pemrograman Berorientasi Object
 Membuat emplementasi encapsulasi dari study case UMKM
 ## Definisi Encapsulation
-Encapsulasi adalah sebuah proses penggabungan atribute dan method ke dalam sebuah class. Biasanya atribute dan method dideskripsikan secara terpisah pada pemrograman prosedural. Selain itu encapsulasi juga dihubungkan dengan pemberian hak akses pada kelas ataupun anggota dari sebuah kelas(atribute dan method). Selain itu pemberian hak akses diberikan pada tiga hal yaitu pada kelas, atribute, dan method.
+<p style= "text-align: justify;">Encapsulasi adalah sebuah proses penggabungan atribute dan method ke dalam sebuah class. Biasanya atribute dan method dideskripsikan secara terpisah pada pemrograman prosedural. Selain itu encapsulasi juga dihubungkan dengan pemberian hak akses pada kelas ataupun anggota dari sebuah kelas(atribute dan method). Selain itu pemberian hak akses diberikan pada tiga hal yaitu pada kelas, atribute, dan method.</p>
 ## Macam Macam Hak Akses di Java
 - Public
 Digunakan apabila atribute/method ingin bisa diakses di kelas yang lain.
@@ -16,6 +16,19 @@ Contructor merupakan method yang namanya sama dengan class itu sendiri, contruct
 
 ## Getter Setter
 - Getter
-Method yang dibuat untuk mengambil/mengembalikan nilai sebuah atribute kepada pemanggilnya
+Method yang dibuat untuk mengambil/mengembalikan nilai sebuah atribute kepada pemanggilnya.
 
 ![image](src/images/Getter.png)
+- Setter
+Method yang dibuat untuk memodifikasi nilai dari suatu atribute berdasarkan nilai yang dikirim oleh pemanggilnya menggunakan parameter.
+
+![image](src/images/Setter.png)
+
+## Pertamuan Object
+Object class Product `produk` Bertamu di class TransaksiService menjadi atribute
+
+![image](src/images/atribute.png)
+
+![image](src/images/bertamu.png)
+
+![image](src/images/hitung.png)
