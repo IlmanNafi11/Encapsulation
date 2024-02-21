@@ -12,4 +12,4 @@ Digunakan pada konsep pewarisan. Apabila variable dan method dari class pemilik 
 - Constructor
 Contructor merupakan method yang namanya sama dengan class itu sendiri, contructor merupakan method yang pertama kali dipanggil ketika kita menginstansiasi object yang memiliki constructor tersebut. Biasanya digunakan untuk memberikan nilai default/nilai awal pada atribut disuatu class.
 
-![image](Constructor.png)
+![Alt Text](src/images/Construktor.png)
