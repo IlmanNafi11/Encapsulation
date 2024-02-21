@@ -66,6 +66,29 @@ public class main {
         "\nTotal Bayar: Rp. "+transPenjualan.getBiaya());
         
         System.out.println("==================================");
-        // 
+        // membuat objek Transaksi Service
+        TransaksiServis tranServis = new TransaksiServis(produk.getId_produk(), produk.getNama_Product(), produk.getKategori(), 2, 0, "Azka", "Nganjuk", "0822442332", produk);
+        // get data transaksi service
+        System.out.println("ID-Produk: " + tranServis.getId_Produk()+
+        "\nKategori: " + tranServis.getKategori()+
+        "\nNama Product: "+ tranServis.getName_Produk()+
+        "\nJumlah: " +tranServis.getJumlah()+
+        "\nTotal Bayar: Rp. " +tranServis.biayaPenanganan()+
+        "\nNama Customer: "+ tranServis.getNama_Customer()+
+        "\nHp Customer: " + tranServis.getPhone_Customer()+
+        "\nAlamat Customer : " + tranServis.getAddress_Customer());
+        // set/ubah biaya penanganan
+        tranServis.setPenanganan(25000);
+        // Tampilkan/get Data Transaksi Terbaru
+        System.out.println("=============================");
+        System.out.println("UPDATE BIAYA PENANGANAN");
+        System.out.println("ID-Produk: " + tranServis.getId_Produk()+
+        "\nKategori: " + tranServis.getKategori()+
+        "\nNama Product: "+ tranServis.getName_Produk()+
+        "\nJumlah: " +tranServis.getJumlah()+
+        "\nTotal Bayar: Rp. " +tranServis.biayaPenanganan()+
+        "\nNama Customer: "+ tranServis.getNama_Customer()+
+        "\nHp Customer: " + tranServis.getPhone_Customer()+
+        "\nAlamat Customer : " + tranServis.getAddress_Customer());
     }
 }

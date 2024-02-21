@@ -10,9 +10,14 @@ public class TransaksiServis {
     private String nama_Customer;
     private String address_Customer;
     private String phone_Customer;
+    // set biaya penanganan
+    private int penanganan = 50000;
+    //menjadikan class product sebagai atribute untuk digunakan menghitung biaya
+    private Product produk;
+    
     // constructor
     public TransaksiServis(String id_Produk, String name_Produk, String kategori, int jumlah, int biaya,
-            String nama_Customer, String address_Customer, String phone_Customer) {
+            String nama_Customer, String address_Customer, String phone_Customer, Product product) {
         this.id_Produk = id_Produk;
         this.name_Produk = name_Produk;
         this.kategori = kategori;
@@ -21,6 +26,7 @@ public class TransaksiServis {
         this.nama_Customer = nama_Customer;
         this.address_Customer = address_Customer;
         this.phone_Customer = phone_Customer;
+        this.produk = product;
     }
     // getter
     public String getName_Produk() {
@@ -85,5 +91,16 @@ public class TransaksiServis {
     // setter
     public void setKategori(String kategori) {
         this.kategori = kategori;
+    }
+    
+    public int getPenanganan() {
+        return penanganan;
+    }
+    public void setPenanganan(int penanganan) {
+        this.penanganan = penanganan;
+    }
+    // menghitung total biaya dan mengembalikan nilainya
+    public int biayaPenanganan(){
+        return jumlah*produk.getHarga()+penanganan;
     }
 }
