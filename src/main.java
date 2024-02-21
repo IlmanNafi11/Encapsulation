@@ -43,15 +43,29 @@ public class main {
         "\nKategori: " + produk.getKategori()+
         "\nNama Product: "+ produk.getNama_Product()+
         "\nStok: " + produk.getJumlah()+
-        "\nHarga: "+ produk.getHarga()+
+        "\nHarga: Rp. "+ produk.getHarga()+
         "\nID-Supplier: "+ produk.getId_suplier()+
         "\nNama Supplier: "+ produk.getNama_suplier());    
         // set/ubah data produk
         produk.setHarga(50000);
         System.out.println("==================");
-        System.out.println("Harga terbaru: " + produk.getHarga());
+        System.out.println("Harga terbaru: Rp. " + produk.getHarga());
 
         System.out.println("=====================================");
-        System.out.println("");
+        // Membuat objek Transaksi Penjualan
+        TransaksiPenjualan transPenjualan = new TransaksiPenjualan("TR12987", produk.getNama_Product(), 0, 4, produk.getId_produk());
+        // menghitung total bayar
+        int total = transPenjualan.getJumlah() * produk.getHarga();
+        // set biaya
+        transPenjualan.setBiaya(total);
+        // get data transaksi penjualan
+        System.out.println("Transaksi Penjualan");
+        System.out.println("ID-Transaksi: " + transPenjualan.getIdTransaksi()+
+        "\nNama Product: " + transPenjualan.getNama_Produk()+
+        "\nJumlah: " + transPenjualan.getJumlah()+
+        "\nTotal Bayar: Rp. "+transPenjualan.getBiaya());
+        
+        System.out.println("==================================");
+        
     }
 }
